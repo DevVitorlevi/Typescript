@@ -5,7 +5,6 @@ abstract class Veiculo {
         this.Nome=Nome
         this.Cor=cor 
     }
-    abstract Info():any
     abstract Freiar(): any
     abstract Acelerar():any
 
@@ -18,20 +17,40 @@ class Carro extends Veiculo{
         this.ligado =true
         this.velo=0
     }
+    Ligar(){
+        this.ligado =true
+    }
+    Desligado(){
+        this.ligado=false
+    }
     Freiar() {
-        this.velo-=10
+        if(this.ligado == true){
+        this.velo -=10
+    }  
     }
     Acelerar(){
-        this.velo+=20
+        if(this.ligado == true){
+            this.velo +=20
+    }
     }
     Info(){
-
+        console.log(`Nome: ${this.Nome}`)
+        console.log(`Cor: ${this.Cor}`)
+        console.log(`Ligado: ${(this.ligado)? 'Sim' : 'Não'}`)
+        console.log(`Velocidade: ${this.velo}`)
     }
 }
-const Car = new Carro('Vermelho','Azul')
-Car.Freiar()
-Car.Freiar()
-Car.Freiar()
-Car.Acelerar()
-Car.Acelerar()
-Car.Info()  
+class Moto extends Carro{
+    Nome:string
+    Cor: string
+    constructor(Nome:string,cor:string){
+        super(Nome,cor)
+        this.Nome=Nome
+        this.Cor=cor
+    }
+}
+
+const Mt = new Moto('Bros','Vermelha')
+Mt.Freiar()
+Mt.Acelerar()
+Mt.Info()
