@@ -5,6 +5,7 @@ abstract class Veiculo {
         this.Nome=Nome
         this.Cor=cor 
     }
+    abstract Info():any
     abstract Freiar(): any
     abstract Acelerar():any
 
@@ -18,11 +19,19 @@ class Carro extends Veiculo{
         this.velo=0
     }
     Freiar() {
-        console.log('Freio')
+        this.velo-=10
     }
     Acelerar(){
-        console.log('acerela')
+        this.velo+=20
+    }
+    Info(){
+
     }
 }
 const Car = new Carro('Vermelho','Azul')
 Car.Freiar()
+Car.Freiar()
+Car.Freiar()
+Car.Acelerar()
+Car.Acelerar()
+Car.Info()  

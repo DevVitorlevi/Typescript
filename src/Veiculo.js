@@ -12,7 +12,6 @@ class Carro extends Veiculo {
         this.velo = 0;
     }
     Freiar() {
-        console.log('Freio');
     }
     Acelerar() {
         console.log('acerela');
