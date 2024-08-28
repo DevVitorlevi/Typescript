@@ -7,6 +7,7 @@ abstract class Veiculo {
     }
     abstract Freiar(): any
     abstract Acelerar():any
+   
 
 }
 class Carro extends Veiculo{
@@ -38,6 +39,7 @@ class Carro extends Veiculo{
         console.log(`Cor: ${this.Cor}`)
         console.log(`Ligado: ${(this.ligado)? 'Sim' : 'Não'}`)
         console.log(`Velocidade: ${this.velo}`)
+        console.log('--------------------------------')
     }
 }
 class Moto extends Carro{
@@ -49,7 +51,13 @@ class Moto extends Carro{
         this.Cor=cor
     }
 }
-
+const Car = new Carro("Siena","Preto")
+Car.Acelerar()
+Car.Acelerar()
+Car.Acelerar()
+Car.Freiar()
+Car.Info()
+//
 const Mt = new Moto('Bros','Vermelha')
 Mt.Freiar()
 Mt.Acelerar()
