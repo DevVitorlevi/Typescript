@@ -1,12 +1,12 @@
 abstract class Veiculo {
     Nome:string
     Cor:string
-    constructor(Nome:string,cor:string) {
+    constructor(Nome:string,Cor:string) {
         this.Nome=Nome
-        this.Cor=cor 
+        this.Cor=Cor 
     }
-    abstract Freiar(): any
-    abstract Acelerar():any
+    abstract Freiar():void
+    abstract Acelerar():void
 
 
 }
