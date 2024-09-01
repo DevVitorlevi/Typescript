@@ -7,7 +7,7 @@ abstract class Veiculo {
     }
     abstract Freiar(): any
     abstract Acelerar():any
-   
+
 
 }
 class Carro extends Veiculo{
