@@ -1,19 +1,19 @@
 import Conta from "./conta"
-export default class Conta_PF extends Conta{
-    private cpf:string
-    constructor(titular:string,cpf:string){
+export default class Conta_PJ extends Conta{
+    private cnpj:string
+    constructor(titular:string,cnpj:string){
         super(titular)
-        this.cpf = cpf
+        this.cnpj = cnpj
     }
-    info():void{
+        info():void{
         console.log(`Titular: ${this.Titular}`)
         console.log(`Numero Da Conta ${this.GeraNumero()}`)
-        console.log(`CPF ${this.cpf}`)
+        console.log(`CNPJ ${this.cnpj}`)
         console.log(`Saldo: ${this.saldo_C} R$`)
-        console.log('--------------------------------')
+        console.log('----------------------------')
     }
-    public deposito(valor: number){
-        if(valor >=5000){
+    public deposito(valor: number) {
+        if(valor >=10000){
             console.log('Valor Do Deposito é Muito Alto')
         }else{
             super.deposito(valor)
@@ -22,4 +22,5 @@ export default class Conta_PF extends Conta{
     public saque(valor:number){
         super.saque(valor)
     }
+    
 }
