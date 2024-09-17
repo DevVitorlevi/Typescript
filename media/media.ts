@@ -1,4 +1,4 @@
-class Medias {
+export default class Medias {
 
     static calcularMedia(a: number, b: number): number;
     static calcularMedia(a: number, b: number, c: number): number;
@@ -19,7 +19,3 @@ static calcularMedia(a: number, b: number, c?: number, d?: number): number { //c
 }
 }
 
-
-console.log(Medias.calcularMedia(10, 10));            
-console.log(Medias.calcularMedia(10, 10, 10));        
-console.log(Medias.calcularMedia(10, 10, 10, 10));

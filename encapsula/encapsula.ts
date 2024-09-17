@@ -1,4 +1,4 @@
-class Computador{
+export default class Computador{
     private id:number
     public nome:string
     private ram:number
@@ -27,9 +27,3 @@ class Computador{
         this.ligado=false
     }
 }
-
-//istanciar
-const comp1 = new Computador('Ryzen',16,100)
-
-comp1.info()
-comp1.ligando()
