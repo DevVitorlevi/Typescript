@@ -1,5 +1,5 @@
 
-import { Component } from 'react'
+import Component from './components/Component'
 import './App.css'
 
 function App() {
