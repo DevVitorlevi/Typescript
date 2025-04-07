@@ -1,30 +1,28 @@
-type StatusPedido = 'Pendente' | 'Aprovado' | 'Cancelado'
+type StatusTarefa = "Pendente" | "Em Andamento" | "Concluida";
+type Prioridade = "Baixa" | "Media" | "Alta";
 
-type Pedido = {
-    readonly id: number,
-    cliente: string,
-    status: StatusPedido
-}
+type Tarefa = {
+    readonly id: number;
+    name: string;
+    status: StatusTarefa;
+    prioridade: Prioridade;
+};
 
-type ProcessarPedido = (pedido: Pedido) => string
+const Tarefas: Tarefa[] = [
+    { id: 1, name: 'Limpar Casa', status: 'Em Andamento', prioridade: "Baixa" },
+    { id: 2, name: 'Estudar TS', status: "Concluida", prioridade: "Alta" },
+    { id: 3, name: 'Treinar Lógica', status: 'Em Andamento', prioridade: "Alta" },
+    { id: 4, name: 'Arrumar quarto', status: 'Pendente', prioridade: "Media" },
+    { id: 5, name: 'Ler um livro', status: 'Em Andamento', prioridade: "Media" },
+];
 
-const processarPedido: ProcessarPedido = (pedido) => {
-    switch (pedido.status) {
-        case "Pendente":
-            return "Aguardando Aprovação"
-            break
-        case "Aprovado":
-            return "Pedido Aprovado"
-            break
-        case "Cancelado":
-            return 'Pedido Cancelado'
-    }
-}
+// Tipo da função que recebe uma lista de tarefas e um status
+type FiltrarTarefas = (tarefas: Tarefa[], status: StatusTarefa) => Tarefa[];
 
-const Cliente: Pedido = {
-    id: 1,
-    cliente: 'Vitor',
-    status: 'Aprovado'
-}
+const filtrarTarefa: FiltrarTarefas = (tarefas, status) => {
+    return tarefas
+        .filter((item) => item.status === status) // filtra pelo status
+};
 
-console.log(`Olá ${Cliente.cliente} seu pedido está ${processarPedido(Cliente)}`)
+// Teste da função com status "Em Andamento"
+console.log(filtrarTarefa(Tarefas, "Em Andamento"))
