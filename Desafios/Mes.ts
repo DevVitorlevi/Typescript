@@ -1,9 +1,13 @@
-function monthname(number: number): string {
-    const months = [
-        'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
-        'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
-    ];
-    return months[number - 1] ?? 'Mês inválido';
-}
+function Inverter(value: number | boolean): number | boolean {
+    if (typeof value === 'boolean') {
+        return !value;
+    } else if (typeof value === 'number') {
+        return -value;
+    }
 
-console.log(monthname(1))
+    throw new Error('Tipo não suportado');
+}
+console.log(Inverter(1))
+console.log(Inverter(-1))
+console.log(Inverter(false))
+console.log(Inverter(true))
