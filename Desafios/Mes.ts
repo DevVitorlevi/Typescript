@@ -4,7 +4,7 @@ function Inverter(value: number | boolean): number | boolean {
     } else if (typeof value === 'number') {
         return -value;
     }
-
+    
     throw new Error('Tipo não suportado');
 }
 console.log(Inverter(1))
