@@ -4,7 +4,7 @@ function sortNumber(num: number) {
         return console.log(`Parabens! O Numero Sorteado foi: ${numcompare}`)
     }
 
-    return console.log(`Que Pena O Numero Sorteado Foi:$ {numcompare}`)
+    return console.log(`Que Pena O Numero Sorteado Foi:$ s{numcompare}`)
 }
 
 sortNumber(5)
