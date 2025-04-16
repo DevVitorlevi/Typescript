@@ -1,5 +1,9 @@
 {
   "devDependencies": {
+    "@types/eslint": "^9.6.1",
+    "@types/eslint-scope": "^3.7.7",
+    "@types/json-schema": "^7.0.15",
+    "@types/node": "^22.14.1",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
