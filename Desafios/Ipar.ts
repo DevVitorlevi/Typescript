@@ -1,15 +1,15 @@
-const Nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+const Nums: number[] = [2, 3, 5, 5, 7, 7, 1, 9, 10, 11];
+type obj = {
+    [key: number]: number
+}
 function returnIndexandPar(arr: number[]) {
-    let result = []
-
+    let obj: obj = {}
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 == 0 && i % 2 == 0) {
-            result.push(arr[i])
-
+        if (arr[i] % 2 === 0 && i % 2 === 0) {
+            obj[`${i}`] = arr[i];
         }
     }
-    return result
+    return obj;
 }
 
 console.log(returnIndexandPar(Nums))
