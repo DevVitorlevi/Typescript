@@ -1,5 +1,20 @@
 {
     "code-runner.executorMap": {
         "typescript": "npx ts-node --files --transpile-only",
-    }
+    },
+    // Tema escuro moderno
+    "workbench.colorTheme": "Best Themes - Material High Contrast Italic",
+    // Fonte bonita com ligaduras
+    "editor.fontLigatures": true,
+    // Tamanho da fonte
+    // Espaçamento entre linhas
+    "editor.lineHeight": 24,
+    // Suavização de fontes
+    // Configurações do CodeSnap
+    "codesnap.backgroundColor": "#1e1e1e", // cor de fundo
+    "codesnap.showWindowControls": true,
+    "codesnap.padding": 16,
+    "codesnap.roundedCorners": true,
+    // Desativa minimap para limpar o visual
+    "editor.minimap.enabled": false
 }
