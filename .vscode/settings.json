@@ -1,20 +1,19 @@
 {
+    // 🚀 Execução instantânea TypeScript com TSX
     "code-runner.executorMap": {
-        "typescript": "npx ts-node --files --transpile-only",
+        "typescript": "tsx --watch"
     },
-    // Tema escuro moderno
-    "workbench.colorTheme": "Best Themes - Material High Contrast Italic",
-    // Fonte bonita com ligaduras
-    "editor.fontLigatures": true,
-    // Tamanho da fonte
-    // Espaçamento entre linhas
+    "code-runner.runInTerminal": true,
+    // 🎨 Tema escuro moderno
+    "workbench.colorTheme": "Vivid Black",
+    // ✍️ Fonte e estilo
     "editor.lineHeight": 24,
-    // Suavização de fontes
-    // Configurações do CodeSnap
-    "codesnap.backgroundColor": "#1e1e1e", // cor de fundo
+    "editor.fontSize": 14,
+    // 🖼️ Configurações do CodeSnap (capturas de código)
+    "codesnap.backgroundColor": "#1e1e1e",
     "codesnap.showWindowControls": true,
     "codesnap.padding": 16,
     "codesnap.roundedCorners": true,
-    // Desativa minimap para limpar o visual
+    // 🧹 Interface limpa
     "editor.minimap.enabled": false
 }
