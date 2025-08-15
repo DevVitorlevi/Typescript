@@ -3,6 +3,7 @@
     "code-runner.executorMap": {
         "typescript": "tsx --watch"
     },
+    "editor.fontLigatures": true,
     "code-runner.runInTerminal": true,
     // 🎨 Tema escuro moderno
     "workbench.colorTheme": "Vivid Black",
