@@ -8,14 +8,15 @@
     "editor.fontSize": 14,
     "editor.lineHeight": 24,
     "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,            // formata automaticamente ao salvar
+    "editor.formatOnSave": true,             
+    "editor.defaultFormatter": "esbenp.prettier-vscode",   // Prettier como formatador padrão
     "workbench.colorTheme": "Cyber Neon",
     "workbench.iconTheme": "fira-code-material-icon-theme",
     
     // Prettier
-    "prettier.semi": true,                  // adiciona ; automaticamente
-    "prettier.singleQuote": true,           // usa aspas simples
-    "prettier.trailingComma": "all",        // adiciona vírgula no final de objetos/arrays
+    "prettier.semi": true,                  
+    "prettier.singleQuote": true,           
+    "prettier.trailingComma": "all",        
     
     // Codesnap
     "codesnap.backgroundColor": "#1e1e1e",
