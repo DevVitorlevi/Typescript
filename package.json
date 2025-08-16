@@ -4,6 +4,7 @@
     "@types/eslint-scope": "^3.7.7",
     "@types/json-schema": "^7.0.15",
     "@types/node": "^22.14.1",
+    "prettier": "^3.6.2",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
