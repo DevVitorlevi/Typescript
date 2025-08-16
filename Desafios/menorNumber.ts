@@ -1,4 +1,4 @@
-const nume: number[] = [10, 11, -1, 20]
+const nume: number[] = [10, 11, -1, -10]
 
 function MenorNumber(arr: number[]): number {
     let menor = 0
